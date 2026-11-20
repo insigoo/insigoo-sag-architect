@@ -4,7 +4,7 @@
 
 三件事：**建库（SAG）× 编译（公益项目-披露标准 + GDT-Core 要素+纪律）× 诊断（SIA）**。
 
-> 其中「诊断（SIA）」由开源技能 **`insigoo-sia`**（MIT，v3.0.0+）提供，本技能负责编排。SIA 真源仓库为 `github.com/ericyueric/insigoo-sia-open`（技能名仍为 `insigoo-sia`），两边不重复维护。
+> 其中「诊断（SIA）」由开源技能 **`insigoo-sia`**（MIT，v3.0.0+）提供，本技能负责编排。SIA 真源仓库为 `github.com/insigoo/insigoo-sia-open`（技能名仍为 `insigoo-sia`），两边不重复维护。
 
 ---
 
@@ -27,7 +27,7 @@
 |------|---------|---------|
 | `insigoo-sag` | SAG 引擎完整部署脚本 + 知识库质量巡检（Lint）（能力一技术底座） | 开源 `github.com/ericyueric/insigoo-sag` |
 | `insigoo-knowledge-base` | LLM Wiki 与三层索引扩展标准（本技能已内联核心） | 开源 `github.com/ericyueric/insigoo-knowledge-base` |
-| `insigoo-sia` | **能力三「诊断」的执行引擎**：SIA L1 逻辑自洽体检（7 原则 + 三A三力四维 + 三模式 + 10 项快检 + 成熟度）。v3.0.0 起 L2 指标量化层全开源，L3 社会价值评估以方法草案 + 参考实现 + 验证案例开放 | 开源 `github.com/ericyueric/insigoo-sia-open`（v3.0.0+，MIT） |
+| `insigoo-sia` | **能力三「诊断」的执行引擎**：SIA L1 逻辑自洽体检（7 原则 + 三A三力四维 + 三模式 + 10 项快检 + 成熟度）。v3.0.0 起 L2 指标量化层全开源，L3 社会价值评估以方法草案 + 参考实现 + 验证案例开放 | 开源 `github.com/insigoo/insigoo-sia-open`（v3.0.0+，MIT） |
 | `GDTcreater` | GDT-DB 六件套向导（本技能 2.5.4 已含 KB 映射卡，可手动建包） | ⚠️ 未开源（insigoo 内部技能），本技能不依赖 |
 
 
@@ -39,7 +39,7 @@
    - 用户级：`~/.workbuddy/skills/insigoo-sag-architect/`
    - 或项目级：`<项目>/.workbuddy/skills/insigoo-sag-architect/`
 2. 重启 WorkBuddy 或刷新技能索引。
-3. （可选）如需增强能力，另行安装上述可选依赖技能；**若要做「知识诊断」，请安装 `insigoo-sia`（开源包 `github.com/ericyueric/insigoo-sia-open`）**。
+3. （可选）如需增强能力，另行安装上述可选依赖技能；**若要做「知识诊断」，请安装 `insigoo-sia`（开源包 `github.com/insigoo/insigoo-sia-open`）**。
 4. 在对话中说出触发词（如"帮我搭知识库""做 SAG 知识库""按披露标准整理资料""SIA 诊断"）即加载本技能。
 
 ---

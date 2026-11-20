@@ -33,12 +33,12 @@ tags:
 disable-model-invocation: true
 # 本技能已自带全部必要资源（references/ 目录：LLM Wiki 标准、三层索引、wiki 骨架、
 # 15 样本集、GDT-Core 设计），可独立安装运行；能力三「诊断」由 insigoo-sia（开源包 insigoo-sia-open，v3.0.0+）提供。以下为可选增强依赖：
-# 安装后部分能力增强；建库、编译两件事不装也能完整跑通，诊断需配合 insigoo-sia（github.com/ericyueric/insigoo-sia-open）。
+# 安装后部分能力增强；建库、编译两件事不装也能完整跑通，诊断需配合 insigoo-sia（github.com/insigoo/insigoo-sia-open）。
 # 来源标注：[GH] = 有公开仓库可自行获取；[本地] = insigoo 内部技能，当前未开源。
 optional_dependencies:
   - insigoo-sag     # [可选][GH] SAG 引擎部署脚本 + 知识库质量巡检（Lint）（能力一技术底座）→ github.com/ericyueric/insigoo-sag
   - insigoo-knowledge-base    # [可选][GH] LLM Wiki 与三层索引扩展标准（本技能已内联核心）→ github.com/ericyueric/insigoo-knowledge-base
-  - insigoo-sia               # [可选][GH] 能力三「诊断」执行引擎：SIA L1 逻辑自洽体检 + L2 指标量化（v3.0.0+）→ github.com/ericyueric/insigoo-sia-open（技能名仍为 insigoo-sia）
+  - insigoo-sia               # [可选][GH] 能力三「诊断」执行引擎：SIA L1 逻辑自洽体检 + L2 指标量化（v3.0.0+）→ github.com/insigoo/insigoo-sia-open（技能名仍为 insigoo-sia）
   - GDTcreater                # [可选][本地] GDT-DB 六件套向导，未开源；本技能 2.5.4 已含 KB 映射卡，无需依赖
 ---
 
@@ -328,7 +328,7 @@ optional_dependencies:
 
 ### 3.1 调用约定
 
-加载 `insigoo-sia` 技能执行（能力三的执行引擎，开源包 `github.com/ericyueric/insigoo-sia-open` v3.0.0+；未安装时提示用户安装 `insigoo-sia`，不另行内联副本），把评估对象从"单个项目方案"扩展为"组织整体知识资产"：
+加载 `insigoo-sia` 技能执行（能力三的执行引擎，开源包 `github.com/insigoo/insigoo-sia-open` v3.0.0+；未安装时提示用户安装 `insigoo-sia`，不另行内联副本），把评估对象从"单个项目方案"扩展为"组织整体知识资产"：
 
 - **L1 逻辑自洽层**：诊断组织各项目的"投入→活动→产出→成果→影响"链条在知识库中是否完整、有无断链/伪因果；重点看 `proposal`→`implementation`→`monitoring`→`evaluation` 四类资料是否闭环。
 
@@ -407,7 +407,7 @@ optional_dependencies:
 > |---|---|---|
 > | `insigoo-sag` | `github.com/ericyueric/insigoo-sag` | ✅ 开源 MIT |
 > | `insigoo-knowledge-base` | `github.com/ericyueric/insigoo-knowledge-base` | ✅ 开源 MIT（v2.0.0 通用版） |
-> | `insigoo-sia` | `github.com/ericyueric/insigoo-sia-open` | ✅ 开源 MIT（v3.0.0+：L1+L2 全开源，L3 方法草案开放） |
+> | `insigoo-sia` | `github.com/insigoo/insigoo-sia-open` | ✅ 开源 MIT（v3.0.0+：L1+L2 全开源，L3 方法草案开放） |
 > | `GDTcreater` | 无 | ⚠️ insigoo 内部技能，未开源；本技能不依赖它 |
 >
 | 15 示范任务包集 | 本技能 `references/gdt_kb_samples/` |
